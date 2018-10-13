@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Test Button</title>
+</head>
+<style type="text/css">
+body {
+	background:#DDA0DD;
+}
+.pict,
+input[type="checkbox"] {
+  display: none;
+  position:absolute;
+  top: 50%;
+  left: 39%;
+  margin: -50px 0 0 -50px;
+}
+
+input[type="checkbox"]:checked + .pict {
+  display: block;
+}
+
+
+.btn {position:absolute;
+  top: 45%;
+  left: 53%;
+  margin: -120px 0 0 -120px;
+  display: inline-block;
+  padding: 8px 8px;
+  height: 25px;
+  width:120px;
+  text-align:center;
+  background-color: #E6E6FA;
+  border: 3px solid gray;
+  cursor: not-allowed;
+}
+</style>
+<body>
+<label for="pseudoBtn" class="btn">Нажми на меня:)</label>
+<input type="checkbox" id="pseudoBtn">
+<div class="pict">
+<img src = '1.gif' width = '400'>
+</div>
+
+</body>
+</html>
